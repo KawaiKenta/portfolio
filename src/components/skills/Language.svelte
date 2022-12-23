@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 0px;
   }
   li {
     list-style: none;
@@ -30,7 +31,7 @@
   li img {
     display: block;
     margin: auto;
-    max-width: 200px;
+    max-width: 70%;
   }
   h3 {
     font-size: 20px;
