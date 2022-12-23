@@ -19,13 +19,23 @@
     height: 500px;
     position: relative;
   }
-  .content {
-    position: absolute;
-    color: whitesmoke;
-    top: 40%;
-    left: 60%;
-  }
   h1 {
     font-size: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    .content {
+      position: absolute;
+      color: whitesmoke;
+      top: 40%;
+      left: 60%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .content {
+      position: absolute;
+      top: 30%;
+      left: 5%;
+      color: whitesmoke;
+    }
   }
 </style>

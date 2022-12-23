@@ -6,9 +6,11 @@
   const width = window.innerWidth;
 </script>
 
-<div class="header">
-  <Header />
-</div>
+{#if width > 768}
+  <div class="header">
+    <Header />
+  </div>
+{/if}
 <section id="title">
   <Title />
 </section>

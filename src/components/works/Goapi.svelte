@@ -15,19 +15,31 @@
 </div>
 
 <style>
-  .container {
-    display: flex;
-    margin-bottom: 48px;
-  }
-  .container div {
-    width: 50%;
-    padding: 0.8em;
-  }
   h3 {
     font-size: 20px;
     margin-bottom: 8px;
   }
   img {
     width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    .container div {
+      width: 50%;
+      padding: 0.8em;
+    }
+    .container {
+      display: flex;
+      margin-bottom: 48px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .container div {
+      width: 100%;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 48px;
+    }
   }
 </style>
